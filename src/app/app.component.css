@@ -1,0 +1,272 @@
+.outbak-navlogo img{
+	height: auto;
+	margin-top: -10px;
+	margin-bottom: -10px;
+}
+
+.outbak-nav{
+	background:White;
+	padding:0 0 0 12px;
+	width:100%;
+    -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    top:0px;
+    z-index: 30;
+}
+.outbak-nav div{
+	opacity:1;	
+}
+
+
+.outbak-navlogo img{
+	width: 10px;
+}
+/*
+.outbak-nav .nav-link:hover{
+	color:red !important;
+}
+*/
+@media only screen and (min-width : 320px) and (max-width : 991px) {
+	.outbak-nav{
+		padding-top:10px;
+		padding-bottom:10px;
+		position:relative
+	}.outbak-nav li a ,.navbar-brand{
+		width:100%;
+		text-align:center;
+	}
+	.outbak-nav ul{
+		padding-left:0px;
+	}
+	.outbak-nav{
+		padding-left:0px;
+	}
+	.outbak-nav .navbar-toggler{
+		margin-left:15px;
+	}
+}
+@media only screen and (min-width : 320px) and (max-width : 575px) {
+  	.navbar-nav li a{
+		font-size:15px;
+	}
+	.outbak-navlogo img{
+		width: 200px;
+	}
+}
+
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+  	.navbar-nav li a{
+		font-size:18px;
+	}
+	.outbak-navlogo img{
+		width: 300px;
+	}
+}
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+  	.navbar-nav li a{
+		font-size:18px;
+	}
+	.outbak-navlogo img{
+		width: 300px;
+	}
+}
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+  	.navbar-nav li a{
+		font-size:1.4vw;
+		padding-left:20px !important;
+		padding-right:20px !important;
+	}
+	.outbak-navlogo img{
+		width: 14vw;
+	}
+	.dropdown-menu{
+		padding-left:20px;
+		padding-right:20px;
+	}
+
+}
+@media only screen and (min-width: 1200px) {
+
+  	.navbar-nav li a{
+		font-size:1.2vw;
+		padding-left:20px !important;
+		padding-right:20px !important;
+	}
+	.outbak-navlogo img{
+		width: 15vw;
+	}
+	.outbak-nav ul{
+		padding-left:2vw;
+	}
+
+
+	
+}
+@media only screen and (min-width: 992px) {
+	.catura-tranform{
+		padding-top:8vw;			
+	}
+	.dropdown-menu{
+		padding-left:20px;
+		padding-right:20px;
+	}
+	.outbak-nav{
+		position:fixed;
+	}
+}
+
+
+.catura-tranform{
+	background:  url("../assets/images/FloatingParticlesEducational.gif") no-repeat center center fixed; 
+    
+    z-index:1;
+    background-size: cover;
+	height:100vh;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+
+@media (min-width: 992px) {
+  .animate {
+    animation-duration: 0.3s;
+    -webkit-animation-duration: 0.3s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  100% {
+    transform:translateY(0rem);
+    opacity: 1;
+  }
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: transform;
+    -webkit-opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    -webkit-opacity: 1;
+  }
+  0% {
+    -webkit-transform: translateY(1rem);
+    -webkit-opacity: 0;
+  }
+}
+
+.slideIn {
+  -webkit-animation-name: slideIn;
+  animation-name: slideIn;
+}
+
+
+.btn{
+    position:relative;
+    display:block;
+    color:white;
+    font-size: 14px;
+    font-family: 'ubuntuRegular';
+    text-decoration: none;
+    margin: 30px 0;
+    padding: 15px 50px;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 3s all ease;
+    z-index:2;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+    width: auto;
+    display: inline-block;
+  }
+
+  .btn1{
+    border: 2px solid #D24D57;
+  }
+  
+  
+  .btn::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: all 0.6s ease;
+  }
+  .btn1::before{
+    background: #D24D57;
+    width:0;
+    height: 100%;
+  }
+  .btn1:hover::before{
+    width: 100%;
+  }
+  @font-face {
+    font-family: 'ubuntuBold';
+    src: url('../assets/fonts/Ubuntu-B.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} 
+@font-face {
+    font-family: 'ubuntuBoldItalic';
+    src: url('../assets/fonts/Ubuntu-BI.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ubuntuCondensedRegular';
+    src: url('../assets/fonts/Ubuntu-C.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ubuntuLight';
+    src: url('../assets/fonts/Ubuntu-L.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ubuntuLightItalic';
+    src: url('../assets/fonts/Ubuntu-LI.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ubuntuMedium';
+    src: url('../assets/fonts/Ubuntu-M.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ubuntuMediumItalic';
+    src: url('../assets/fonts/Ubuntu-MI.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} 
+@font-face {
+    font-family: 'ubuntuRegular';
+    src: url('../assets/fonts/Ubuntu-R.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ubuntuRegularItalic';
+    src: url('../assets/fonts/Ubuntu-RI.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}   
