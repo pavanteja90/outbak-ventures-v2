@@ -11,7 +11,8 @@
     -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
     -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
-	top:0px;
+    top:0px;
+    z-index: 30;
 }
 .outbak-nav div{
 	opacity:1;	
