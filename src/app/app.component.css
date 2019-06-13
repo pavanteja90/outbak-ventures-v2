@@ -119,6 +119,7 @@
 .catura-tranform{
 	/*background:  url("background.gif") no-repeat center center fixed; 
     */
+    z-index:1;
     background-size: cover;
 	height:100vh;
 	background-attachment: fixed;
@@ -172,3 +173,99 @@
   -webkit-animation-name: slideIn;
   animation-name: slideIn;
 }
+
+
+.btn{
+    position:relative;
+    display:block;
+    color:white;
+    font-size: 14px;
+    font-family: 'ubuntuRegular';
+    text-decoration: none;
+    margin: 30px 0;
+    padding: 15px 50px;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 3s all ease;
+    z-index:2;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+    width: auto;
+    display: inline-block;
+  }
+
+  .btn1{
+    border: 2px solid #D24D57;
+  }
+  
+  
+  .btn::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: all 0.6s ease;
+  }
+  .btn1::before{
+    background: #D24D57;
+    width:0;
+    height: 100%;
+  }
+  .btn1:hover::before{
+    width: 100%;
+  }
+  @font-face {
+    font-family: 'ubuntuBold';
+    src: url('../assets/fonts/Ubuntu-B.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} 
+@font-face {
+    font-family: 'ubuntuBoldItalic';
+    src: url('../assets/fonts/Ubuntu-BI.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ubuntuCondensedRegular';
+    src: url('../assets/fonts/Ubuntu-C.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ubuntuLight';
+    src: url('../assets/fonts/Ubuntu-L.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ubuntuLightItalic';
+    src: url('../assets/fonts/Ubuntu-LI.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ubuntuMedium';
+    src: url('../assets/fonts/Ubuntu-M.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ubuntuMediumItalic';
+    src: url('../assets/fonts/Ubuntu-MI.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} 
+@font-face {
+    font-family: 'ubuntuRegular';
+    src: url('../assets/fonts/Ubuntu-R.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ubuntuRegularItalic';
+    src: url('../assets/fonts/Ubuntu-RI.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}   
