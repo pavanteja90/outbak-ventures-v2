@@ -16,6 +16,7 @@ import { OurVenturesComponent } from './our-ventures/our-ventures.component';
 import { BlogComponent } from './blog/blog.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
     declarations: [
@@ -24,7 +25,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
         OurVenturesComponent,
         BlogComponent,
         ContactUsComponent,
-        PageNotFoundComponent
+        PageNotFoundComponent,
+        FooterComponent
     ],
     imports: [
         BrowserModule,
