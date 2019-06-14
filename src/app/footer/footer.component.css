@@ -1,0 +1,104 @@
+/*Footer*/
+.text-center {
+    text-align: center;
+}
+
+.inline-display {
+    display: inline-block;
+}
+
+.padding-left {
+    padding-left: 15px;
+}
+
+.footer-section{
+    background-color: #0C252E;
+    width: 100vw;
+    height: auto;
+    color: aliceblue;
+    padding: 5vh 5vw;
+}
+/* .services-list a.clicked{
+    color: red !important;
+}
+.footer-second a.clicked {
+    color: red !important;
+} */
+.footer-section h5{
+    position: absolute;
+}
+
+.red-static-underline::after{
+    content: '';
+    display: block;
+    width: 100%;
+    background-color: red;
+    height: 3px;
+    position: relative;
+}
+
+.red-underline::after{
+    content: '';
+    display: block;
+    width: 0%;
+    background-color: red;
+    height: 3px;
+    position: relative;
+    transition: all ease-in-out 350ms;
+}
+
+.red-underline:hover::after{
+    width: 100%;
+}
+
+.services-list{
+    text-align: left;
+    padding-left: 20px;
+    list-style-type: none;
+    position: relative;
+    font-size: medium;
+    font-weight: 350;
+}
+
+.services-list>li{
+    padding: 2px;
+}
+
+.services-list>li>a:hover{
+    color: red;
+    transition: all ease-in-out 350ms;
+}
+
+.others-list a:hover{
+    cursor: pointer;
+    transition: all ease-in-out 350ms;
+}
+
+.services-list > li > a{
+    text-decoration: none;
+    cursor: pointer;
+    padding: 1vh;
+}
+
+.footer{
+    margin: 2vh 5vw;
+}
+
+/* .fa-animate>a>i:hover{
+    transition: all ease-in-out 250ms;
+    transform: scale(1.1);
+}
+
+.fa-animate>a>i{
+    animation-duration: 250ms;
+    animation-name: out;
+}
+
+@keyframes out{
+    from {
+        transform: scale(1.1);
+    }
+    to {
+        transform: scale(1);
+    }
+} */
