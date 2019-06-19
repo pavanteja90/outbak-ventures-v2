@@ -12,43 +12,52 @@ export class FooterComponent implements OnInit {
 
     ngOnInit() {
     }
-    navigate(id: number) {
-        switch (id) {
+    
+    navigate(id1: number, id2?:number) {
+        switch (id1) {
             case 1:
-                this.router.navigate(['/services/blockchain-consulting']);
+                switch(id2){
+                    case 1:
+                        this.router.navigate(['/services/our-industry']);
+                        break;
+                    case 2:
+                        this.router.navigate(['/services/our-services']);
+                        break;
+                    default:
+                        this.router.navigate(['/services/our-industry']);
+                        break;
+                }                
                 break;
             case 2:
-                this.router.navigate(["/services/cryptocurrency-wallet"]);
+                switch(id2){
+                    case 1:
+                        this.router.navigate(['/about-us/our-history']);
+                        break;
+                    case 2:
+                        this.router.navigate(['/about-us/our-executives']);
+                        break;
+                    case 3:
+                        this.router.navigate(['/about-us/our-team']);
+                        break;
+                    default:
+                        this.router.navigate(['/about-us/our-history']);
+                        break;
+                }                
                 break;
             case 3:
-                this.router.navigate(["/services/ico-development"]);
+                this.router.navigate(["/home"]);
                 break;
             case 4:
-                this.router.navigate(["/services/proof-of-concept"]);
+                this.router.navigate(["/our-ventures"]);
                 break;
             case 5:
-                this.router.navigate(["/services/smart-contract"]);
-                break;
-            case 6:
-                this.router.navigate(["/services/secrity-token"]);
-                break;
-            case 10:
-                this.router.navigate(["/services/internet-of-things"]);
-                break;
-            case 11:
-                this.router.navigate(["/services/artificial-intelligence"]);
-                break;
-            case 7:
                 this.router.navigate(["/blog"]);
                 break;
-            case 8:
-                this.router.navigate(["/contact"]);
-                break;
-            case 9:
-                this.router.navigate(["/team"]);
+            case 6:
+                this.router.navigate(["/contact-us"]);
                 break;
             default:
-                this.router.navigate(["/services"]);
+                this.router.navigate(["/home"]);
                 break;
         }
     }

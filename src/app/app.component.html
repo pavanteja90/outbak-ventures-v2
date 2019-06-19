@@ -1,64 +1,81 @@
-<nav class="navbar navbar-expand-lg navbar-light outbak-nav">
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-	</button>
-	<div class="collapse navbar-collapse outbak-navlogo" id="navbarTogglerDemo01">
-		
-		<a class="navbar-brand" href="#">
-			<img src="../assets/images/outbacklogo.png" alt="">
-		</a>
-		
-		
-		<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-			<li class="nav-item">
-				<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">Our Ventures <span class="sr-only">(current)</span></a>
-			</li>
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				Services
-				</a>
-				<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdownMenuLink">
-					<a class="dropdown-item" href="#">Our Industry</a>
-					<a class="dropdown-item" href="#">Our services</a>
-				</div>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">Blog <span class="sr-only">(current)</span></a>
-			</li>
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				About us
-				</a>
-				<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdownMenuLink">
-					<a class="dropdown-item" href="#">Our History</a>
-					<a class="dropdown-item" href="#">Our Executives</a>
-					<a class="dropdown-item" href="#">Our Team</a>
-				</div>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">Contact us <span class="sr-only">(current)</span></a>
-			</li>
-		</ul>
-	   
-	</div>
-</nav>
+<div class="no-x-overflow">
 
-  
-  <div class="catura-tranform">
-    <a href="#" class="btn btn1">Hover me</a>
-		<a href="#" class="btn btn1">Hover me</a><a href="#" class="btn btn1">Hover me</a>
-		<a href="#" class="btn btn1">Hover me</a><a href="#" class="btn btn1">Hover me</a>
-		<a href="#" class="btn btn1">Hover me</a><a href="#" class="btn btn1">Hover me</a>
-  </div>
+    <nav class="navbar navbar-expand-lg navbar-light outbak-nav">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation"
+            (click)="navButtonClicked()">
+            <i id="navButtonIcon" class="fa fa-bars"></i>
+        </button>
 
-<button (click)="navigate(1)">
-    About us
-</button>
-<button (click)="navigate(2)">
-    Services
-</button>
-<router-outlet></router-outlet>
-<app-footer></app-footer>
+        <div class="collapse navbar-collapse outbak-navlogo" id="navbarTogglerDemo01">
+
+            <a class="navbar-brand cursor" (click)="navigate(3)">
+                <img src="../assets/images/outbacklogo.png" alt="">
+            </a>
+
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link cursor" (click)="navigate(3)">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link cursor" (click)="navigate(4)">Our Ventures <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Services
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right animate slideIn"
+                        aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item cursor" (click)="navigate(1,1)">Our Industry</a>
+                        <a class="dropdown-item cursor" (click)="navigate(1,2)">Our services</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link cursor" (click)="navigate(5)">Blog <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        About us
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right animate slideIn"
+                        aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item cursor" (click)="navigate(2,1)">Our History</a>
+                        <a class="dropdown-item cursor" (click)="navigate(2,2)">Our Executives</a>
+                        <a class="dropdown-item cursor" (click)="navigate(2,3)">Our Team</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link cursor" (click)="navigate(6)">Contact us <span
+                            class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+
+            <div class="fa-animate centered">
+                <a href="https://www.facebook.com/Catura-670185576738291/" target="_blank">
+                    <i class="fa fa-facebook" style="color: #3b5998" title="Facebook"></i>
+                </a>
+                &nbsp;&nbsp;
+                <a href="https://www.instagram.com/blockchaincatura/" target="_blank">
+                    <i class="fa fa-instagram" style="color: #c13584" title="Instagram"></i>
+                </a>
+                &nbsp;&nbsp;
+                <a href="https://www.linkedin.com/company/catura/about/" target="_blank">
+                    <i class="fa fa-linkedin" style="color: #0e76a8;" title="LinkedIn"></i>
+                </a>
+                &nbsp;&nbsp;
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="catura-tranform">
+        <a href="#" class="btn btn1">Hover me</a>
+    </div>
+
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
+
+</div>
