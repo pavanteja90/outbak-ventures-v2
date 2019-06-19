@@ -1,3 +1,7 @@
+.no-x-overflow{
+    overflow-x: hidden;
+}
+
 .outbak-navlogo img{
 	height: auto;
 	margin-top: -10px;
@@ -21,6 +25,19 @@
 
 .outbak-navlogo img{
 	width: 10px;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.centered {
+    text-align: center;
+}
+
+#navButton {
+    margin: 0 0 0 15px;
+    padding: 10px;
 }
 /*
 .outbak-nav .nav-link:hover{
@@ -118,7 +135,7 @@
 
 
 .catura-tranform{
-	background:  url("../assets/images/FloatingParticlesEducational.gif") no-repeat center center fixed; 
+	background:  url("../assets/images/background2.png") no-repeat center center fixed; 
     
     z-index:1;
     background-size: cover;
