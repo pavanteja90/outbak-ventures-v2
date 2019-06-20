@@ -680,3 +680,8 @@
       margin-left:1%;	
   }
 }
+.workingProcessSection{
+    background: url('../../assets/images/homepage-section1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
