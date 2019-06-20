@@ -23,9 +23,10 @@ export class HomeComponent implements OnInit {
     ngOnInit() {
         this.googleAnalytics.emitEvent('PageView', 'Home');
         $(document).ready(function(){
-            var navheight = $('.navbar').height();
-            var scrollTopVal = $(".summarySection").offset().top - navheight;
+            
               $('.arrow span').click(function(){
+                var navheight = $('.navbar').height();
+                var scrollTopVal = $(".summarySection").offset().top - navheight;
                 $('html, body').animate({
                 scrollTop: scrollTopVal
               }, 2000);

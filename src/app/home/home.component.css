@@ -634,6 +634,9 @@
       padding-right:20px;
       padding-top:40px;
   }
+  .cubes{
+      padding-bottom: 40px;
+  }
   .workingProcess-1-2,.summary-second-half-heading{
     font-size:20px;
     }
@@ -664,7 +667,7 @@
         padding-right:5vw;
     }
     .cubes .card i{
-        font-size:50vw;
+        font-size: 10em;
     }
     .summary-first-half img{
         height: 70vw;
@@ -691,6 +694,9 @@
       padding-right:10px;
       padding-top:40px;
   }
+  .cubes{
+    padding-bottom: 40px;
+}
   .workingProcess-1-2,.summary-second-half-heading{
     font-size:22px;
     }
@@ -720,7 +726,7 @@
         padding-right:5vw;
     }
     .cubes .card i{
-        font-size:30vw;
+        font-size:10em;
     }
     .summary-first-half img{
         height: 40vw;
@@ -746,6 +752,9 @@
       padding-right:10px;
       padding-top:40px;
   }
+  .cubes{
+    padding-bottom: 40px;
+}
   .workingProcess-1-2,.summary-second-half-heading{
     font-size:22px;
     }
@@ -775,7 +784,7 @@
         padding-right:5vw;
     }
     .cubes .card i{
-        font-size:20vw;
+        font-size:10em;
     }
     .summary-first-half img{
         height: 40vw;
@@ -834,7 +843,7 @@
         padding-right:5vw;
     }
     .cubes .card i{
-        font-size:15vw;
+        font-size:10em;
     }
     .summary-first-half img{
         height: 30vw;
@@ -904,7 +913,15 @@
         padding-right: 5vw;
     }
 }
-
+@media only screen and (max-width: 1199px) {
+    .workingProcessSection{
+        position: relative;
+        margin-top: -10px;
+    }
+    .summarySection .summary-first-half{
+        margin-top:0px !important;
+    }
+}
 
 .workingProcessSection{
     background: url('../../assets/images/homepage-section1.jpg');
