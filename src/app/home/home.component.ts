@@ -23,8 +23,13 @@ export class HomeComponent implements OnInit {
     ngOnInit() {
         this.googleAnalytics.emitEvent('PageView', 'Home');
         $(document).ready(function(){
-
-
+            var navheight = $('.navbar').height();
+            var scrollTopVal = $(".summarySection").offset().top - navheight;
+              $('.arrow span').click(function(){
+                $('html, body').animate({
+                scrollTop: scrollTopVal
+              }, 2000);
+            });
 
             function heightOfCards() {
                 var cards = $('.cubes').find('.card');
