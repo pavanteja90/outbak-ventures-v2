@@ -986,6 +986,7 @@ p {
     background:black;
     height:100vh;
     position: relative;
+    padding-top: 8vw;
 }
 
 
