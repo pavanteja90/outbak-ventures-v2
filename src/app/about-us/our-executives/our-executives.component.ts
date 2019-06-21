@@ -20,7 +20,7 @@ export class OurExecutivesComponent implements OnInit {
     }
 
     ngOnInit() {
-        this.googleAnalytics.emitEvent('PageView', 'Our Executives');
+        this.googleAnalytics.emitEvent('PageView', 'Our Leaders');
     }
 
 }

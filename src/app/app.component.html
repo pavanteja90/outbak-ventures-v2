@@ -26,25 +26,25 @@
                         aria-haspopup="true" aria-expanded="false">
                         Services
                     </a>
-                    <div class="dropdown-menu dropdown-menu-right animate slideIn"
+                    <div class="dropdown-menu dropdown-menu-right animate slideIn no-padding-left no-padding-right"
                         aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item cursor" (click)="navigate(1,1)">Our Industry</a>
-                        <a class="dropdown-item cursor" (click)="navigate(1,2)">Our services</a>
+                        <a class="dropdown-item cursor centered" (click)="navigate(1,1)">Our Industry</a>
+                        <a class="dropdown-item cursor centered" (click)="navigate(1,2)">Our services</a>
                     </div>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link cursor" (click)="navigate(5)">Blog <span class="sr-only">(current)</span></a>
-                </li>
+                </li> -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">
                         About us
                     </a>
-                    <div class="dropdown-menu dropdown-menu-right animate slideIn"
+                    <div class="dropdown-menu dropdown-menu-right animate slideIn no-padding-left no-padding-right"
                         aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item cursor" (click)="navigate(2,1)">Our History</a>
-                        <a class="dropdown-item cursor" (click)="navigate(2,2)">Our Executives</a>
-                        <a class="dropdown-item cursor" (click)="navigate(2,3)">Our Team</a>
+                        <a class="dropdown-item cursor centered" (click)="navigate(2,1)">Who we are</a>
+                        <a class="dropdown-item cursor centered" (click)="navigate(2,2)">Our Leaders</a>
+                        <a class="dropdown-item cursor centered" (click)="navigate(2,3)">Our People</a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -53,8 +53,8 @@
                 </li>
             </ul>
 
-            <div class="fa-animate centered">
-                <a href="https://www.facebook.com/Catura-670185576738291/" target="_blank">
+            <div class="padding-left padding-right fa-animate centered">
+                <a href="https://www.facebook.com/OutbakVenturesPtyLtd/" target="_blank">
                     <i class="fa fa-facebook" style="color: #3b5998" title="Facebook"></i>
                 </a>
                 &nbsp;&nbsp;
@@ -65,12 +65,10 @@
                 <a href="https://www.linkedin.com/company/catura/about/" target="_blank">
                     <i class="fa fa-linkedin" style="color: #0e76a8;" title="LinkedIn"></i>
                 </a>
-                &nbsp;&nbsp;
             </div>
 
         </div>
     </nav>
-
     <router-outlet></router-outlet>
     <app-footer></app-footer>
 

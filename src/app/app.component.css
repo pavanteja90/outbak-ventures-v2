@@ -151,7 +151,7 @@
     */
     z-index:1;
     background-size: cover;
-	height:100vh;
+	height:70vh;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -245,57 +245,4 @@
   .btn1:hover::before{
     width: 100%;
   }
-  @font-face {
-    font-family: 'ubuntuBold';
-    src: url('../assets/fonts/Ubuntu-B.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-} 
-@font-face {
-    font-family: 'ubuntuBoldItalic';
-    src: url('../assets/fonts/Ubuntu-BI.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'ubuntuCondensedRegular';
-    src: url('../assets/fonts/Ubuntu-C.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'ubuntuLight';
-    src: url('../assets/fonts/Ubuntu-L.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'ubuntuLightItalic';
-    src: url('../assets/fonts/Ubuntu-LI.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'ubuntuMedium';
-    src: url('../assets/fonts/Ubuntu-M.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'ubuntuMediumItalic';
-    src: url('../assets/fonts/Ubuntu-MI.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-} 
-@font-face {
-    font-family: 'ubuntuRegular';
-    src: url('../assets/fonts/Ubuntu-R.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'ubuntuRegularItalic';
-    src: url('../assets/fonts/Ubuntu-RI.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}   
+  
