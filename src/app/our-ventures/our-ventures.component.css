@@ -1,5 +1,5 @@
 .header-section {
-	background: url("../../assets/images/backgrounds/background2.png") no-repeat center center fixed; 
+	background: url("../../assets/images/backgrounds/7.png") no-repeat center center fixed; 
     z-index:1;
     background-size: cover;
 	height:70vh;
@@ -12,4 +12,58 @@
 .square {
     margin: 0 10%;
     width: 80%
+}
+
+.business {
+    background: linear-gradient(to top, #8d9ebe 0%, #f8deb1 100%);
+}
+
+.card-shadow {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+    animation-name: out;
+    animation-duration: 350ms;
+    transform: scale(1);
+    transition: all ease-in-out 350ms;
+    cursor: pointer;
+}
+
+.card-link {
+    text-decoration: none;
+}
+
+.card-shadow:hover {
+    transform: scale(1.03);
+    transition: all ease-in-out 350ms;
+}
+
+.card-shadow mat-card-title::after{
+    content: '';
+    display: block;
+    width: 0%;
+    background-color: red;
+    height: 1px;
+    position: relative;
+    transition: all ease-in-out 350ms;
+}
+
+.card-shadow:hover mat-card-title::after{
+    width: 100%;
+}
+
+@keyframes out {
+    from {
+        transform: scale(1.03);
+    }
+    to {
+        transform: scale(1);
+    }
 }

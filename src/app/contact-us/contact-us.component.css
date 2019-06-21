@@ -1,0 +1,10 @@
+.header-section {
+	background: url("../../assets/images/backgrounds/background2.png") no-repeat center center fixed; 
+    z-index:1;
+    background-size: cover;
+	height:70vh;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}

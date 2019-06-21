@@ -1,15 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { OurIndustryComponent } from './our-industry/our-industry.component';
-import { OurServicesComponent } from './our-services/our-services.component';
 import { ServicesComponent } from './services.component';
 import { ServicesRoutingModule } from './services.routing.module';
+import { InvestersComponent } from './investers/investers.component';
+import { PartnersComponent } from './partners/partners.component';
+import { ClientsComponent } from './clients/clients.component';
 
 @NgModule({
     declarations: [
-        OurIndustryComponent,
-        OurServicesComponent,
-        ServicesComponent
+        ServicesComponent,
+        InvestersComponent,
+        PartnersComponent,
+        ClientsComponent
     ],
     imports: [
         CommonModule,
