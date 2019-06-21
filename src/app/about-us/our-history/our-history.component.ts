@@ -20,7 +20,7 @@ export class OurHistoryComponent implements OnInit {
     }
 
     ngOnInit() {
-        this.googleAnalytics.emitEvent('PageView', 'Our History');        
+        this.googleAnalytics.emitEvent('PageView', 'Who we are');        
     }
 
 }

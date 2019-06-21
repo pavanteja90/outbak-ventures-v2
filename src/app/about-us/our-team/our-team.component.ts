@@ -20,7 +20,7 @@ export class OurTeamComponent implements OnInit {
     }
 
     ngOnInit() {
-        this.googleAnalytics.emitEvent('PageView', 'Our Team');
+        this.googleAnalytics.emitEvent('PageView', 'Our People');
     }
 
 }
