@@ -5,6 +5,7 @@ import { OurExecutivesComponent } from './our-executives/our-executives.componen
 import { OurTeamComponent } from './our-team/our-team.component';
 import { AboutUsRoutingModule } from './about-us.routing.module';
 import { AboutUsComponent } from './about-us.component';
+import { MatCardModule } from "@angular/material";
 
 @NgModule({
     declarations: [
@@ -14,7 +15,8 @@ import { AboutUsComponent } from './about-us.component';
         OurTeamComponent],
     imports: [
         CommonModule,
-        AboutUsRoutingModule
+        AboutUsRoutingModule,
+        MatCardModule
     ]
 })
 export class AboutUsModule { }

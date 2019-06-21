@@ -18,13 +18,16 @@ const routes: Routes = [
         path: 'home', component: HomeComponent
     },
     {
-        path: 'our-ventures', component: OurVenturesComponent
+        path: 'our-associates', component: OurVenturesComponent
     },
     {
         path: 'blog', component: BlogComponent
     },
     {
         path: 'contact-us', component: ContactUsComponent
+    },
+    {
+        path: '', component: HomeComponent
     },
     {
         path: '**', redirectTo: '404'

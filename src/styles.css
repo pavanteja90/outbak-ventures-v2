@@ -235,3 +235,23 @@
     color: white;
 }
 
+.page-heading {
+    display: inline-block;
+}
+
+.page-heading::after {
+    content: '';
+    display: block;
+    width: 100%;
+    background-color: red;
+    height: 3px;
+    position: relative;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.justified {
+    text-align: justify;
+}

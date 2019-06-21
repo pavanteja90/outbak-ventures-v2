@@ -18,6 +18,10 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { FooterComponent } from './footer/footer.component';
 
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+
+import { MatCardModule } from "@angular/material";
+
 @NgModule({
     declarations: [
         AppComponent,
@@ -30,11 +34,13 @@ import { FooterComponent } from './footer/footer.component';
     ],
     imports: [
         BrowserModule,
+        BrowserAnimationsModule,
         AppRoutingModule,
         AngularFontAwesomeModule,
         FormsModule,
         ReactiveFormsModule,
         HttpClientModule,
+        MatCardModule,
         ServicesModule,
         AboutUsModule
     ],

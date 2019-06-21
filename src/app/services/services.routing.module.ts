@@ -1,15 +1,20 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { OurIndustryComponent } from './our-industry/our-industry.component';
-import { OurServicesComponent } from './our-services/our-services.component';
+import { ClientsComponent } from "./clients/clients.component";
+import { InvestersComponent } from "./investers/investers.component";
+import { PartnersComponent } from "./partners/partners.component";
 import { ServicesComponent } from './services.component';
 
 const _servicesRoutes: Routes = [
     {
-        path: 'our-industry', component: OurIndustryComponent
+        path: 'clients', component: ClientsComponent
     },
     {
-        path: 'our-services', component: OurServicesComponent
+        path: 'investers', component: InvestersComponent
+    },
+    
+    {
+        path: 'partners', component: PartnersComponent
     },
     {
         path: '', component: ServicesComponent

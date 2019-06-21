@@ -22,6 +22,7 @@ export class AppComponent {
 
     ngOnInit() {
         this.googleAnalytics.emitEvent('PageView', 'HomePage');
+        $("#myModal").modal('show');
     }
 
     navButtonClicked() {
@@ -49,13 +50,16 @@ export class AppComponent {
             case 1:
                 switch (id2) {
                     case 1:
-                        this.router.navigate(['/services/our-industry']);
+                        this.router.navigate(['/services/clients']);
                         break;
                     case 2:
-                        this.router.navigate(['/services/our-services']);
+                        this.router.navigate(['/services/investers']);
+                        break;
+                    case 2:
+                        this.router.navigate(['/services/partners']);
                         break;
                     default:
-                        this.router.navigate(['/services/our-industry']);
+                        this.router.navigate(['/services/clients']);
                         break;
                 }
                 break;
@@ -79,7 +83,7 @@ export class AppComponent {
                 this.router.navigate(["/home"]);
                 break;
             case 4:
-                this.router.navigate(["/our-ventures"]);
+                this.router.navigate(["/our-associates"]);
                 break;
             case 5:
                 this.router.navigate(["/blog"]);
@@ -92,5 +96,4 @@ export class AppComponent {
                 break;
         }
     }
-
 }
