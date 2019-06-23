@@ -5,6 +5,7 @@ import { OurVenturesComponent } from './our-ventures/our-ventures.component';
 import { BlogComponent } from './blog/blog.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { CookiesInfoComponent } from './cookies-info/cookies-info.component';
 // import { AboutUsModule } from './about-us/about-us.module';
 
 const routes: Routes = [
@@ -25,6 +26,9 @@ const routes: Routes = [
     },
     {
         path: 'contact-us', component: ContactUsComponent
+    },
+    {
+        path: 'cookies', component: CookiesInfoComponent
     },
     {
         path: '', component: HomeComponent

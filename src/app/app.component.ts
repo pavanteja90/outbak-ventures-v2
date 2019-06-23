@@ -23,23 +23,25 @@ export class AppComponent {
     ngOnInit() {
         this.googleAnalytics.emitEvent('PageView', 'HomePage');
         $("#myModal").modal('show');
+        console.log("This is a developer tool. It is not recommended to be opened by others. Tweaking with the developer tools might result in breaking of the functionalities and might effect your website experience.")
+        console.log("Developed by Pavan Teja Bhatta <pavanteja.bhatta@gmail.com>");
     }
 
     navButtonClicked() {
-        if($("#navButton").hasClass("btn-initial")){
+        if ($("#navButton").hasClass("btn-initial")) {
             $("#navButton").removeClass("btn-initial");
             $("#navButton").addClass("btn-outline-danger");
         }
-        else{
+        else {
             $("#navButton").removeClass("btn-outline-danger");
             $("#navButton").addClass("btn-initial");
         }
 
-        if($("#navButtonIcon").hasClass("fa-bars")){
+        if ($("#navButtonIcon").hasClass("fa-bars")) {
             $("#navButtonIcon").removeClass("fa-bars");
             $("#navButtonIcon").addClass("fa-times");
         }
-        else{
+        else {
             $("#navButtonIcon").removeClass("fa-times");
             $("#navButtonIcon").addClass("fa-bars");
         }
@@ -50,16 +52,31 @@ export class AppComponent {
             case 1:
                 switch (id2) {
                     case 1:
-                        this.router.navigate(['/services/clients']);
+                        this.router.navigate(['/services/inv-mgmt']);
                         break;
                     case 2:
-                        this.router.navigate(['/services/investers']);
+                        this.router.navigate(['/services/bsns-cons']);
                         break;
-                    case 2:
-                        this.router.navigate(['/services/partners']);
+                    case 3:
+                        this.router.navigate(['/services/collab']);
+                        break;
+                    case 4:
+                        this.router.navigate(['/services/the-hatch']);
+                        break;
+                    case 5:
+                        this.router.navigate(['/services/fin-serv']);
+                        break;
+                    case 6:
+                        this.router.navigate(['/services/risk-mgmt']);
+                        break;
+                    case 7:
+                        this.router.navigate(['/services/engg-sols']);
+                        break;
+                    case 8:
+                        this.router.navigate(['/services/int-serv']);
                         break;
                     default:
-                        this.router.navigate(['/services/clients']);
+                        this.router.navigate(['/services/inv-mgmt']);
                         break;
                 }
                 break;
@@ -90,6 +107,9 @@ export class AppComponent {
                 break;
             case 6:
                 this.router.navigate(["/contact-us"]);
+                break;
+            case 7:
+                this.router.navigate(["/cookies"]);
                 break;
             default:
                 this.router.navigate(["/home"]);

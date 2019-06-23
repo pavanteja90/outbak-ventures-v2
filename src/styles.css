@@ -172,11 +172,11 @@
 }
 
 .padding-left-5 {
-    padding-left: 5%;
+    padding-left: 5% !important;
 }
 
 .padding-right-5 {
-    padding-right: 5%;
+    padding-right: 5% !important;
 }
 
 .padding-5 {
@@ -235,8 +235,13 @@
     color: white;
 }
 
+.red-text {
+    color: red;
+}
+
 .page-heading {
     display: inline-block;
+    color: #444;
 }
 
 .page-heading::after {
@@ -254,4 +259,33 @@
 
 .justified {
     text-align: justify;
+}
+
+.font-lg {
+    font-size: 1.25em;
+}
+
+.img-contain {
+    width: 100%;
+}
+
+.img-contain-1 {
+    width: 80%;
+}
+
+.img-contain-2 {
+    width: 50%
+}
+
+.img-contain-3 {
+    max-height: 50px;
+}
+
+.sticky {
+    position: sticky;
+    top: 0px;
+}
+
+.pointer {
+    cursor: pointer;
 }

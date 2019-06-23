@@ -23,4 +23,8 @@ export class PageNotFoundComponent implements OnInit {
         this.googleAnalytics.emitEvent('PageView', 'Page not found');
     }
 
+    navigateToHome(){
+        this.router.navigate(['/home']);
+    }
+
 }

@@ -21,6 +21,7 @@ import { FooterComponent } from './footer/footer.component';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 import { MatCardModule } from "@angular/material";
+import { CookiesInfoComponent } from './cookies-info/cookies-info.component';
 
 @NgModule({
     declarations: [
@@ -30,7 +31,8 @@ import { MatCardModule } from "@angular/material";
         BlogComponent,
         ContactUsComponent,
         PageNotFoundComponent,
-        FooterComponent
+        FooterComponent,
+        CookiesInfoComponent
     ],
     imports: [
         BrowserModule,

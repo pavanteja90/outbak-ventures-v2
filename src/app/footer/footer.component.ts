@@ -12,27 +12,42 @@ export class FooterComponent implements OnInit {
 
     ngOnInit() {
     }
-    
-    navigate(id1: number, id2?:number) {
+
+    navigate(id1: number, id2?: number) {
         switch (id1) {
             case 1:
-                switch(id2){
+                switch (id2) {
                     case 1:
-                        this.router.navigate(['/services/clients']);
+                        this.router.navigate(['/services/inv-mgmt']);
                         break;
                     case 2:
-                        this.router.navigate(['/services/investers']);
+                        this.router.navigate(['/services/bsns-cons']);
                         break;
                     case 3:
-                        this.router.navigate(['/services/partners']);
+                        this.router.navigate(['/services/collab']);
+                        break;
+                    case 4:
+                        this.router.navigate(['/services/the-hatch']);
+                        break;
+                    case 5:
+                        this.router.navigate(['/services/fin-serv']);
+                        break;
+                    case 6:
+                        this.router.navigate(['/services/risk-mgmt']);
+                        break;
+                    case 7:
+                        this.router.navigate(['/services/engg-sols']);
+                        break;
+                    case 8:
+                        this.router.navigate(['/services/int-serv']);
                         break;
                     default:
-                        this.router.navigate(['/services/clients']);
+                        this.router.navigate(['/services/inv-mgmt']);
                         break;
-                }                
+                }
                 break;
             case 2:
-                switch(id2){
+                switch (id2) {
                     case 1:
                         this.router.navigate(['/about-us/our-history']);
                         break;
@@ -45,7 +60,7 @@ export class FooterComponent implements OnInit {
                     default:
                         this.router.navigate(['/about-us/our-history']);
                         break;
-                }                
+                }
                 break;
             case 3:
                 this.router.navigate(["/home"]);

@@ -10,7 +10,7 @@ declare var ga: any;
 })
 export class OurHistoryComponent implements OnInit {
 
-    constructor(private router: Router, private googleAnalytics: GoogleAnalyticsService) { 
+    constructor(private router: Router, private googleAnalytics: GoogleAnalyticsService) {
         this.router.events.subscribe(event => {
             if (event instanceof NavigationEnd) {
                 ga('set', 'page', event.urlAfterRedirects);
@@ -20,7 +20,24 @@ export class OurHistoryComponent implements OnInit {
     }
 
     ngOnInit() {
-        this.googleAnalytics.emitEvent('PageView', 'Who we are');        
+        this.googleAnalytics.emitEvent('PageView', 'Who we are');
+    }
+
+    navigate(id: number) {
+        switch (id) {
+            case 1:
+                this.router.navigate(['/contact-us']);
+                break;
+            case 2:
+                this.router.navigate(['/about-us/our-executives']);
+                break;
+            case 3:
+                this.router.navigate(['/about-us/our-team']);
+                break;
+            default:
+                this.router.navigate(['/about-us/our-history']);
+                break;
+        }
     }
 
 }

@@ -1,17 +1,34 @@
 <div class="no-x-overflow">
-    <nav class="navbar navbar-expand-lg navbar-light outbak-nav">
+    <section>
+        <div id="cookies-info" class="alert alert-warning alert-dismissible fade show" role="alert"
+            style="margin-bottom: 0px;">
+            <div>
+                We use cookies to ensure that we give you the best experience on our website. If you continue without
+                changing your settings, we'll assume that you are happy to receive all cookies on our website. However,
+                if you would like to, you can <strong>change your cookie settings</strong> at any time.
+                <div class="pull-right">
+                    <button style="margin: 0em 1em" type="button" class="btn btn-outline-success btn-sm"
+                        data-dismiss="alert" aria-label="Continue" id="outback-topCookies">
+                        <span aria-hidden="true">Continue</span>
+                    </button>
+                    <input style="margin: 0em 1 em;" type="button" class="btn btn-outline-secondary btn-sm"
+                        (click)="navigate(7)" aria-label="More Info" value="More Info">
+                    <!-- <span aria-hidden="true"></span> -->
+                </div>
+            </div>
+            <br>
+        </div>
+    </section>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark outbak-nav">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
             aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation"
             (click)="navButtonClicked()">
             <i id="navButtonIcon" class="fa fa-bars"></i>
         </button>
-
         <div class="collapse navbar-collapse outbak-navlogo" id="navbarTogglerDemo01">
-
             <a class="navbar-brand cursor" (click)="navigate(3)">
-                <img src="../assets/images/Logos/outbak1.png" alt="Logo">
+                <img src="../assets/images/Logos/outbak3.png" alt="Logo">
             </a>
-
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item">
                     <a class="nav-link cursor" (click)="navigate(3)">Home <span class="sr-only">(current)</span></a>
@@ -25,11 +42,30 @@
                         aria-haspopup="true" aria-expanded="false">
                         Services
                     </a>
-                    <div class="dropdown-menu dropdown-menu-right animate slideIn no-padding-left no-padding-right"
+                    <div class="dropdown-menu dropdown-menu-right animate slideIn no-padding bg-dark"
                         aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item cursor" (click)="navigate(1,1)">Clients</a>
-                        <a class="dropdown-item cursor" (click)="navigate(1,2)">Investers</a>
-                        <a class="dropdown-item cursor" (click)="navigate(1,3)">Partners</a>
+                        <a class="dropdown-item nav-white-text cursor" (click)="navigate(1,1)">Investment Management</a>
+                        <hr class="no-margin">
+                        <a class="dropdown-item nav-white-text cursor" (click)="navigate(1,2)">Business Consulting</a>
+                        <hr class="no-margin">
+                        <a class="dropdown-item nav-white-text cursor" (click)="navigate(1,3)">Collaboration</a>
+                        <hr class="no-margin">
+                        <a class="dropdown-item nav-splitter-text uppercase cursor"
+                            style="padding-left: 10px !important">The Outbak Difference</a>
+                        <hr class="no-margin">
+                        <a class="dropdown-item nav-white-text cursor" (click)="navigate(1,4)">The Hatchery</a>
+                        <hr class="no-margin">
+                        <a class="dropdown-item nav-splitter-text uppercase cursor"
+                            style="padding-left: 10px !important">Other Services</a>
+                        <hr class="no-margin">
+                        <a class="dropdown-item nav-white-text cursor" (click)="navigate(1,5)">Financial Services</a>
+                        <hr class="no-margin">
+                        <a class="dropdown-item nav-white-text cursor" (click)="navigate(1,6)">Risk Management</a>
+                        <hr class="no-margin">
+                        <a class="dropdown-item nav-white-text cursor" (click)="navigate(1,7)">Tech Solutions</a>
+                        <hr class="no-margin">
+                        <a class="dropdown-item nav-white-text cursor" (click)="navigate(1,8)">International
+                            Services</a>
                     </div>
                 </li>
                 <!-- <li class="nav-item">
@@ -40,11 +76,13 @@
                         aria-haspopup="true" aria-expanded="false">
                         About us
                     </a>
-                    <div class="dropdown-menu dropdown-menu-right animate slideIn no-padding-left no-padding-right"
+                    <div class="dropdown-menu dropdown-menu-right animate slideIn no-padding bg-dark"
                         aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item cursor" (click)="navigate(2,1)">Who we are</a>
-                        <a class="dropdown-item cursor" (click)="navigate(2,2)">Our Leaders</a>
-                        <a class="dropdown-item cursor" (click)="navigate(2,3)">Our People</a>
+                        <a class="dropdown-item nav-white-text cursor" (click)="navigate(2,1)">Who we are</a>
+                        <hr class="no-margin">
+                        <a class="dropdown-item nav-white-text cursor" (click)="navigate(2,2)">Our Leaders</a>
+                        <hr class="no-margin">
+                        <a class="dropdown-item nav-white-text cursor" (click)="navigate(2,3)">Our People</a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -55,7 +93,7 @@
 
             <div class="padding-left padding-right fa-animate centered">
                 <a href="https://www.facebook.com/OutbakVenturesPtyLtd/" target="_blank">
-                    <i class="fa fa-facebook" style="color: #3b5998" title="Facebook"></i>
+                    <i class="fa fa-facebook white-text" title="Facebook"></i>
                 </a>
                 &nbsp;&nbsp;
                 <!-- <a href="https://www.instagram.com/blockchaincatura/" target="_blank">
@@ -63,7 +101,7 @@
                 </a>
                 &nbsp;&nbsp; -->
                 <a href="https://www.linkedin.com/company/outbak-ventures-pty-ltd/" target="_blank">
-                    <i class="fa fa-linkedin" style="color: #0e76a8;" title="LinkedIn"></i>
+                    <i class="fa fa-linkedin white-text" title="LinkedIn"></i>
                 </a>
             </div>
 
@@ -71,7 +109,7 @@
     </nav>
     <router-outlet></router-outlet>
     <!-- Modal -->
-    <div class="modal hide fade" id="myModal">
+    <!-- <div class="modal hide fade" id="myModal">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -81,14 +119,12 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    This is a Developer Version of the website. It is undergoing changes and the final product will have more content and data. This can be considered as a prototype to the second iteration (v2.0) of Outbak Ventures website.
+                    This is a Developer Version of the website. It is undergoing changes and the final product will have
+                    more content and data. This can be considered as a prototype to the second iteration (v2.0) of
+                    Outbak Ventures website.
                 </div>
-                <!-- <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div> -->
             </div>
         </div>
-    </div>
+    </div> -->
     <app-footer></app-footer>
 </div>
