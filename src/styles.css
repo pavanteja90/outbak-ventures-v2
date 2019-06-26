@@ -261,6 +261,10 @@
     text-align: justify;
 }
 
+.left-aligned{
+    text-align: left;
+}
+
 .font-lg {
     font-size: 1.25em;
 }

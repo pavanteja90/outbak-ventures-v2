@@ -9,6 +9,10 @@
 	background-size: cover;
 }
 
+.content {
+    background: linear-gradient(to bottom right, #fdf6f9, #fce5e5)
+}
+
 .card-body {
     padding: 0.5rem;
 }

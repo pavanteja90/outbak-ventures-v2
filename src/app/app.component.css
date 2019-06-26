@@ -80,6 +80,11 @@
 	color:red !important;
 }
 */
+
+.nav-link {
+    color: white !important;
+}
+
 @media only screen and (min-width : 320px) and (max-width : 991px) {
 	.outbak-nav{
 		padding-top:10px;
@@ -97,7 +102,10 @@
 	}
 	.outbak-nav .navbar-toggler{
 		margin-left:15px;
-	}
+    }
+    .dropdown-item {
+        padding: 2vh 2vw !important;
+    }
 }
 @media only screen and (min-width : 320px) and (max-width : 575px) {
   	.navbar-nav li a{
