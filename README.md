@@ -4,7 +4,7 @@ This is the second iteration of the Outbak Ventures website which is developed o
 
 Version 2.1.0:
 
-Google SEO is incorporated into the website. HashLocationStrategy is removed so that web crawling can be done easily without issues. Changes in the team members are made.
+Google SEO is incorporated into the website. Meta and title tags are changed according to the current page location of the website. HashLocationStrategy is removed so that web crawling can be done easily without issues. Changes in the team members are made.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.1.
 
