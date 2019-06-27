@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { GoogleAnalyticsService } from '../app-services/google-analytics.service';
+import { Meta } from '@angular/platform-browser';
 declare var ga: any;
 declare var $: any;
 
@@ -11,13 +12,19 @@ declare var $: any;
 })
 export class HomeComponent implements OnInit {
 
-    constructor(private router: Router, private googleAnalytics: GoogleAnalyticsService) {
+    constructor(private router: Router, private googleAnalytics: GoogleAnalyticsService, private meta: Meta) {
         this.router.events.subscribe(event => {
             if (event instanceof NavigationEnd) {
                 ga('set', 'page', event.urlAfterRedirects);
                 ga('send', 'pageview');
             }
         });
+        this.meta.addTags([
+            { name: 'description', content: 'Outbak Ventures provides business and management consultancy advice for entrepreneurs to transform their ideas into real businesses.' },
+            { name: 'title', content: 'Home' },
+            { name: 'author', content: 'outbakventures' },
+            { name: 'keywords', content: 'Outbak Ventures, outbak ventures, outbak ventures pty ltd, management consultant, entrepreneurs, consultant' }
+        ]);
     }
 
     ngOnInit() {

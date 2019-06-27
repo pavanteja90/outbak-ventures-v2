@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { LocationStrategy, HashLocationStrategy } from '@angular/common';
+import { LocationStrategy, PathLocationStrategy } from '@angular/common';
 
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { ServicesModule } from "./services/services.module";
@@ -48,7 +48,7 @@ import { CookiesInfoComponent } from './cookies-info/cookies-info.component';
     ],
     providers: [
         HttpClient,
-        { provide: LocationStrategy, useClass: HashLocationStrategy }
+        { provide: LocationStrategy, useClass: PathLocationStrategy }
     ],
     bootstrap: [AppComponent]
 })

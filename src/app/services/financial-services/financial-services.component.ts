@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { GoogleAnalyticsService } from 'src/app/app-services/google-analytics.service';
+import { Meta } from '@angular/platform-browser';
 declare var ga: any;
 
 @Component({
@@ -10,13 +11,20 @@ declare var ga: any;
 })
 export class FinancialServicesComponent implements OnInit {
 
-    constructor(private router: Router, private googleAnalytics: GoogleAnalyticsService) {
+    constructor(private router: Router, private googleAnalytics: GoogleAnalyticsService, private meta: Meta) {
         this.router.events.subscribe(event => {
             if (event instanceof NavigationEnd) {
                 ga('set', 'page', event.urlAfterRedirects);
                 ga('send', 'pageview');
             }
-        })
+        });
+        
+        this.meta.addTags([
+            { name: 'description', content: 'The right partner for all your financial and transactional requirements.' },
+            { name: 'title', content: 'Financial Services | Services' },
+            { name: 'author', content: 'outbakventures' },
+            { name: 'keywords', content: 'financial, money, economical, services, outbak, ventures' }
+        ]);
     }
 
     ngOnInit() {
