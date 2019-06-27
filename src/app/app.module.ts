@@ -22,6 +22,7 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 import { MatCardModule } from "@angular/material";
 import { CookiesInfoComponent } from './cookies-info/cookies-info.component';
+import { SeoService } from './app-services/seo-service.service';
 
 @NgModule({
     declarations: [
@@ -48,7 +49,8 @@ import { CookiesInfoComponent } from './cookies-info/cookies-info.component';
     ],
     providers: [
         HttpClient,
-        { provide: LocationStrategy, useClass: PathLocationStrategy }
+        { provide: LocationStrategy, useClass: PathLocationStrategy },
+        SeoService
     ],
     bootstrap: [AppComponent]
 })

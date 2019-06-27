@@ -2,6 +2,10 @@
 
 This is the second iteration of the Outbak Ventures website which is developed on angular platform. Initial iteration of the website was developed on wordpress and that implementation has a lot of dead links and bugs. To improve the user experience and also to increase the integrity of the company, we navigated from wordpress and developed the website from scratch on angular. This iteration, version 2.0.0 as we call it has been revamped on the content as well as the design pattern of the website. Follow the below instructions to build this website on your own.
 
+Version 2.1.0:
+
+Google SEO is incorporated into the website. HashLocationStrategy is removed so that web crawling can be done easily without issues. Changes in the team members are made.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.1.
 
 ## Development server
