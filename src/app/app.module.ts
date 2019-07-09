@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { LocationStrategy, PathLocationStrategy } from '@angular/common';
+import { LocationStrategy, PathLocationStrategy, HashLocationStrategy } from '@angular/common';
 
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { ServicesModule } from "./services/services.module";
@@ -49,7 +49,7 @@ import { SeoService } from './app-services/seo-service.service';
     ],
     providers: [
         HttpClient,
-        { provide: LocationStrategy, useClass: PathLocationStrategy },
+        { provide: LocationStrategy, useClass: HashLocationStrategy },
         SeoService
     ],
     bootstrap: [AppComponent]
