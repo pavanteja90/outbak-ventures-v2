@@ -18,13 +18,13 @@ export class OurExecutivesComponent implements OnInit {
                 ga('send', 'pageview');
             }
         });
-        this.meta.updateTag({ name: 'description', content: 'Meet the leaders of Outbak Ventures. Our highly qualified executives provide management consultancy to turn your dreams into a successful business.' });
-        this.meta.updateTag({ name: 'keywords', content: 'executives, leaders, directors, ceo, outbak ventures' });
-        this.title.setTitle('Meet Our Leaders');
+        this.meta.updateTag({ name: 'description', content: 'Meet the leader of Outbak Ventures. Our highly qualified executives provide management consultancy to turn your dreams into a successful business.' });
+        this.meta.updateTag({ name: 'keywords', content: 'executive, leader, directors, ceo, outbak ventures' });
+        this.title.setTitle('Meet Our Leader');
     }
 
     ngOnInit() {
-        this.googleAnalytics.emitEvent('PageView', 'Our Leaders');
+        this.googleAnalytics.emitEvent('PageView', 'Our Leader');
     }
 
 }
